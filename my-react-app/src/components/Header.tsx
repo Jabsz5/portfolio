@@ -1,0 +1,50 @@
+import './Header.css';
+import logo from '../assets/ssbm_shine.png'
+
+export default function Header() {
+  return (
+    <header className="header">
+      <div className="header-left">
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+
+      <div className="header-right">
+        <a
+          href="/GianfrancoAlarconresume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link resume"
+        >
+          Resume
+        </a>
+
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.tiktok.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link"
+        >
+          TikTok
+        </a>
+
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="header-link"
+        >
+          Instagram
+        </a>
+      </div>
+    </header>
+  );
+}
