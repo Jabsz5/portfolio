@@ -13,13 +13,13 @@ export default function Header() {
           href="/GianfrancoAlarconresume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="header-link resume"
+          className="header-link"
         >
           Resume
         </a>
 
         <a
-          href="https://github.com"
+          href="https://github.com/Jabsz5"
           target="_blank"
           rel="noopener noreferrer"
           className="header-link"
@@ -28,21 +28,12 @@ export default function Header() {
         </a>
 
         <a
-          href="https://www.tiktok.com"
+          href="https://www.tiktok.com/@frank0ez"
           target="_blank"
           rel="noopener noreferrer"
           className="header-link"
         >
           TikTok
-        </a>
-
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="header-link"
-        >
-          Instagram
         </a>
       </div>
     </header>

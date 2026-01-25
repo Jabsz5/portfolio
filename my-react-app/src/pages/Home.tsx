@@ -47,7 +47,7 @@ export default function Home() {
 
           <ProjectCard
             title="JLB Services"
-            caption="Freelance services website built for a client located in Manchester UK. Delivery service application for local business."
+            caption="Freelance work built for a client located in Manchester UK. Delivery service application for local business."
             href="https://jlbdelivery.co.uk/"
             imageSrc={JLBImage}
             imageAlt="JLB Services Logo"
@@ -56,9 +56,10 @@ export default function Home() {
           <ProjectCard
             title="Project Artemis"
             caption="KnightHacks 2025 Spring Contest Entry. Project Artemis fully independent and controller dependent drone system."
-            href="https://github.com/Jabsz5/ForkedProjectArtemis"
+            href="/project-artemis"
             imageSrc={projectArtemisImage}
             imageAlt="image of Project Artemis"
+            internal
           />
 
           

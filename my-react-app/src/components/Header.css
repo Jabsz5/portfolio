@@ -35,17 +35,15 @@
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.2s ease;
-  white-space: nowrap;        
+  white-space: nowrap;       
+  
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #4cff8f;
+  border-radius: 6px;
 }
 
 .header-link:hover {
   color: #4cff8f;
-}
-
-.resume {
-  padding: 0.4rem 0.9rem;
-  border: 1px solid #4cff8f;
-  border-radius: 6px;
 }
 
 @media (max-width: 600px) {
