@@ -1,0 +1,69 @@
+/* Container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main button (Languages) */
+.dropdown-button {
+  color: #b6ffcc;
+  background: transparent;
+
+  font-weight: 500;
+  font-size: 0.95rem;
+
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #4cff8f;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown-button:hover {
+  color: #4cff8f;
+}
+
+/* Dropdown panel */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  right: auto;
+  margin-top: 0.5rem;
+
+  background: #0b0f0c; /* dark background to match header vibe */
+  border: 1px solid #4cff8f;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column; /* TOP → BOTTOM */
+  min-width: 150px;
+  width: max-content;
+  max-width: calc(100vw - 1rem);
+  box-sizing: border-box;
+
+  z-index: 20;
+}
+
+/* Individual language buttons */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: #b6ffcc;
+
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  padding: 0.5rem 0.9rem;
+  border: none;
+
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  color: #4cff8f;
+  background-color: rgba(76, 255, 143, 0.08);
+}
