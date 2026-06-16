@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import ProjectArtemis from './pages/ProjectArtemis'
+import MeleeScreen from './pages/MeleeScreen'
 import './App.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/project-artemis" element={<ProjectArtemis />} />
+      <Route path="/melee-screen" element={<MeleeScreen />} />
     </Routes>
   </BrowserRouter>
   )

@@ -8,7 +8,11 @@ import JLBImage from '../assets/JLBlogo.png'
 import projectArtemisImage from '../assets/projectArtemis.jpeg'
 // in this middle part
 
+// use navigate from react-router dom
+import { useNavigate } from 'react-router-dom'
+
 export default function Home() {
+    const navigate = useNavigate();
     const projectsRef = useRef<HTMLElement | null>(null)
 
     const scrollToProjects = () => {
@@ -16,6 +20,10 @@ export default function Home() {
             behavior: 'smooth',
             block: 'start',
         })
+    }
+
+    const goToMeleeScreen = () => {
+      navigate("/melee-screen");
     }
 
   return (
@@ -29,6 +37,10 @@ export default function Home() {
 
         <button className="projects-btn" onClick={scrollToProjects}>
             Projects
+        </button>
+
+        <button className="melee-btn" onClick={goToMeleeScreen}>
+          Melee screen in progress
         </button>
        </section>
 

@@ -99,6 +99,24 @@
   box-shadow: 0 0 20px rgba(76, 255, 143, 0.4);
 }
 
+/* MELEE BUTTON */
+.melee-btn {
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+
+  border: 1px solid #4cff8f;
+  color: #4cff8f;
+
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
 /* PROJECTS SECTION */
 .projects {
   min-height: 100vh;
