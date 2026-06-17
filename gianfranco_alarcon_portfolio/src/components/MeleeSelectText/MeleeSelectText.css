@@ -1,11 +1,96 @@
-.MeleeSelectTextBox{
-    width: 300px;
-    height: 50px;
-    background-color: #111;
-    border: 4px solid #bf953e;    
+@font-face {
+    font-family: "A-OTF Folk Pro B";
+    src: url("../../fonts/A-OTF Folk Pro B.otf") format("opentype");
 }
 
-.menu-text{
+.MeleeSelectTextBox {
+    position: relative;
+
+    width: 400px;
+    height: 70px;
+
+    /* default border color */
+    background: #bf953e;
+
+    clip-path: polygon(
+        10% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        10% 100%,
+        0% 50%
+    );
+
+    box-shadow: 0 0 59px rgba(191, 149, 62, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.15s ease;
+    color: #f5a400;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.MeleeSelectTextBox::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+
+    /* default inside color */
+    background: #111;
+
+    clip-path: polygon(
+        10% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        10% 100%,
+        0% 50%
+    );
+
+    transition: 0.15s ease;
+}
+
+.MeleeSelectTextBox .menu-text {
+    /* push the text above the background */
+    z-index: 1;
+
+    text-align: center;
     color: #BF953E; 
+
+    font-family: "A-OTF Folk Pro B", sans-serif;
+    font-size: 30px;
+
+    transition: 0.15s ease;
 }
 
+.MeleeSelectTextBox:hover {
+    background: #ffdd00;
+    box-shadow: 0 0 20px #ffdd00, 0 0 45px rgba(255, 221, 0, 0.8);
+}
+
+.MeleeSelectTextBox:hover::before {
+    background: linear-gradient(180deg,#fff15a 0%, #ffd400 45%,#ffb700 100%);
+}
+
+.MeleeSelectTextBox:hover .menu-text {
+    color: black;
+}
+
+.MeleeText{
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    z-index: 1;
+}
+
+.MeleeScreen{
+    overflow: hidden;
+}
+
+.MeleeBackgroundVideo{
+    z-index: 0;
+}
