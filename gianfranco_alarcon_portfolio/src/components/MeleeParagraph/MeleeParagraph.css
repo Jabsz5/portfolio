@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+
+.MeleeParagraph {
+  position: absolute;
+  text-align: center;
+  top: 350px;
+  left: 400px;
+  font-family: "Arimo", sans-serif;
+  font-style: bold;
+  color: white;
+  font-weight: 700;
+  z-index: 2;
+  white-space: pre-line;
+}

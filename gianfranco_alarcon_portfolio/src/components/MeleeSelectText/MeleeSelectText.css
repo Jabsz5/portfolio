@@ -89,6 +89,8 @@
 
 .MeleeScreen{
     overflow: hidden;
+    min-height: 100vh;
+    height: auto;
 }
 
 .MeleeBackgroundVideo{
