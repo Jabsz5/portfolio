@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import DropdownMenu from "../components/DropdownMenu/DropdownMenu";
-import { getProjectDescription } from "../utils/translation";
+import { artemisDescriptions, getProjectDescription } from "../utils/translation";
+import type { Language } from "../utils/translation";
+
 
 export default function ProjectArtemis() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState<Language>("en");
 
   return (
     <>
@@ -18,7 +20,7 @@ export default function ProjectArtemis() {
         >
           <DropdownMenu onLanguageChange={setLanguage} />
 
-          <p>{getProjectDescription(language)}</p>
+          <p>{getProjectDescription(language, artemisDescriptions)}</p>
         </div>
 
         <div

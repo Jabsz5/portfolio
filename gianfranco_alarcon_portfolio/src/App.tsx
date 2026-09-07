@@ -5,6 +5,7 @@ import MeleeScreen from './pages/MeleeScreen'
 import AboutMe from './pages/AboutMe'
 import Contact from './pages/Contact'
 import ClipSeason from './pages/ClipSeason'
+import SmartCoffeeCup from './pages/SmartCoffeeCup'
 import './App.css'
 
 
@@ -18,6 +19,7 @@ function App() {
       <Route path="/AboutMe" element={<AboutMe />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/ClipSeason" element={<ClipSeason />} />
+      <Route path="/smart-coffee-cup" element={<SmartCoffeeCup />} />
     </Routes>
   </BrowserRouter>
   )

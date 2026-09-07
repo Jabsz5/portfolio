@@ -4,6 +4,7 @@ import ProjectCard from '../components/ProjectCard/ProjectCard.tsx'
 
 // insert images into this section here
 import sharedleImage from '../assets/sharedle.png'
+import smartCoffeeCupImage from '../assets/smart-coffee-cup-prototype.png'
 import JLBImage from '../assets/JLBlogo.png'
 import projectArtemisImage from '../assets/projectArtemis.jpeg'
 // in this middle part
@@ -32,7 +33,7 @@ export default function Home() {
 
     {/* Section 1*/}
       <section className="hero">
-        <h1>Gianfranco Alarconhello</h1>
+        <h1>Gianfranco Alarcon</h1>
         <h2>Computer Engineer</h2>
 
         <button className="projects-btn" onClick={scrollToProjects}>
@@ -49,6 +50,15 @@ export default function Home() {
         <h2>Projects</h2>
         
         <div className="projects-grid">
+
+          <ProjectCard
+            title="Smart Coffee Cup"
+            caption="Final project for UCF's Senior Design course."
+            href="/smart-coffee-cup"
+            imageSrc={smartCoffeeCupImage}
+            imageAlt="insert smart coffee cup design icon here "
+          />
+
           <ProjectCard
             title="Sharedle"
             caption="Wordle-style game final project for UCF's COP4331C course."

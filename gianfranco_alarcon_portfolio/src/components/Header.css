@@ -18,6 +18,46 @@
 .logo {
   height: 40px;
   width: auto;
+  position: relative;
+  top: -20px;
+  left: -40px;
+  box-shadow: none;
+  filter: none;
+  outline: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.logo-link,
+.logo-link:hover,
+.logo-link:focus,
+.logo-link:active {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  filter: none;
+  outline: none;
+  transform: translateY(-6px);
+}
+
+.header .logo-link:hover,
+.header .logo-link:focus,
+.header .logo-link:active {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.header .logo-link:hover .logo,
+.header .logo-link:focus .logo,
+.header .logo-link:active .logo,
+.header .logo:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+  outline: none !important;
 }
 
 .header-right {
