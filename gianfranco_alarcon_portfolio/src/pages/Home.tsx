@@ -32,7 +32,7 @@ export default function Home() {
 
     {/* Section 1*/}
       <section className="hero">
-        <h1>Gianfranco Alarcon</h1>
+        <h1>Gianfranco Alarconhello</h1>
         <h2>Computer Engineer</h2>
 
         <button className="projects-btn" onClick={scrollToProjects}>
