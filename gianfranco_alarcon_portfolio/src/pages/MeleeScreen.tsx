@@ -8,6 +8,7 @@ import "../components/MeleeHeader/MeleeHeader.css";
 import "../components/MeleeSelectText/MeleeSelectText.css";
 import "../components/InfoBox/InfoBox.css";
 import "../components/MeleeCaption/MeleeCaption.css";
+import "../components/MeleeScreen/MeleeScreen.css";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

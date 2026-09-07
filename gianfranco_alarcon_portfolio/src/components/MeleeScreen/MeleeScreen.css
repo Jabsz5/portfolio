@@ -1,0 +1,124 @@
+.MeleeScreen {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.MeleeBackgroundVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  .MeleeScreen {
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+  }
+
+  .MeleeBackgroundVideo {
+    position: fixed;
+  }
+
+  .MeleeHeader {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    margin: 1rem 0 2rem;
+
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .MeleeText {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+
+    width: 100%;
+    z-index: 2;
+  }
+
+  .MeleeSelectTextBox {
+    width: min(90vw, 400px);
+    height: 58px;
+  }
+
+  .MeleeSelectTextBox .menu-text {
+    font-size: clamp(20px, 6vw, 27px);
+  }
+
+  /* Hide the large desktop information panel */
+  .InformationBox {
+    display: none;
+  }
+
+  .MeleeCaptionBox {
+    position: relative;
+    inset: auto;
+    left: auto;
+    bottom: auto;
+    transform: none;
+
+    width: min(88vw, 520px);
+    min-height: 55px;
+    height: auto;
+
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+
+    text-align: center;
+    z-index: 2;
+  }
+
+  .MeleeCaption {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 400px) {
+  .MeleeScreen {
+    padding: 1rem 0.75rem;
+  }
+
+  .MeleeHeader {
+    margin-bottom: 1.25rem;
+  }
+
+  .MeleeSelectTextBox {
+    width: 94vw;
+    height: 52px;
+  }
+
+  .MeleeSelectTextBox .menu-text {
+    font-size: 20px;
+  }
+
+  .MeleeCaptionBox {
+    width: 94vw;
+    margin-top: 1.5rem;
+  }
+}
